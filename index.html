@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            
+        }
+
+        select {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <select name="module" id="module">
+            <option value="" disabled selected>Module</option>
+            <option value="1">Ayuda diagnostica</option>
+            <option value="2">Cirugia</option>
+            <option value="3">Referencia</option>
+            <option value="4">Interconsulta</option>
+            <option value="5">Consulta general</option>
+        </select>
+        
+        <select name="headquarter" id="headquarter">
+            <option value="" disabled selected>Headquarter</option>
+        </select>
+    
+        <select name="specialty" id="specialty">
+            <option value="" disabled selected>Specialty</option>
+        </select>
+    </div>
+  
+
+    <table id="epsTable">
+        <tr>
+            <th>Eps</th>
+        </tr>
+    </table>
+    <script src="./index.js"></script>
+</body>
+</html>
